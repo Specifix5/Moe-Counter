@@ -46,7 +46,7 @@ app.get('/get/@:name', async (req, res) => {
   const renderSvg = themify.getCountImage({ count: data.num, theme, length })
   res.send(renderSvg)
 
-  console.log(data, `theme: ${theme}`, `ref: ${req.get('Referrer') || null}`, `ua: ${req.get('User-Agent') || null}`)
+  //console.log(data, `theme: ${theme}`, `ref: ${req.get('Referrer') || null}`, `ua: ${req.get('User-Agent') || null}`)
 })
 
 // JSON record
@@ -57,15 +57,6 @@ app.get('/record/@:name', async (req, res) => {
 
   res.json(data)
 })
-
-app.get('/heart-beat', (req, res) => {
-  res.set({
-    'cache-control': 'max-age=0, no-cache, no-store, must-revalidate'
-  })
-
-  res.send('alive')
-  console.log('heart-beat')
-});
 
 const listener = app.listen(config.app.port || 3000, () => {
   console.log('Your app is listening on port ' + listener.address().port)
