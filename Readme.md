@@ -20,7 +20,7 @@
 ![Gelbooru](https://count.specifix.dev/get/@demo?theme=gelbooru)</details>
 
 ## Demo
-[https://count.getloli.com](https://count.specifix.dev/)
+[https://count.specifix.dev/](https://count.specifix.dev/)
 
 ## Usage
 
