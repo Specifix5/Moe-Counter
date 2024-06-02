@@ -1,6 +1,6 @@
 # Moe-Counter
 
-多种风格可选的萌萌计数器
+Cute counters with multiple styles to choose from!
 
 ![Moe-Counter](https://count.specifix.dev/get/@Moe-counter.github)
 
